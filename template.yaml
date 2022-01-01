@@ -21,11 +21,5 @@ spec:
 steps:
   - id: template
     name: Fetch Skeleton + Template
-    action: fetch:template
-    input:
-      url: ./*
-      values:
-         component_id: ${{ parameters.component_id }}
-         description: ${{ parameters.project_short_description }}
 
 
