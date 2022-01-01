@@ -84,11 +84,8 @@ steps:
     action: fetch:template
     input:
       url: ./*
-      copyWithoutRender:
-          - .github/workflows/*
       values:
          component_id: ${{ parameters.component_id }}
-         description: ${{ parameters.description }}
-         destination: ${{ parameters.repoUrl | parseRepoUrl }}
-         owner: ${{ parameters.owner }}
+         description: ${{ parameters.project_short_description }}
+
 
