@@ -8,11 +8,9 @@ metadata:
     - experimental
     - go
 spec:
-  owner: web@example.com
-  templater: cookiecutter
+  owner: sulanta.leisangthem@sophos.com
   type: service
-  path: "."
-  schema:
+  parameters:
     required:
       - component_id
       - project_short_description
