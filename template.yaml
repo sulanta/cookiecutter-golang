@@ -78,3 +78,17 @@ spec:
           - circle
           - none
         default: github
+steps:
+  - id: template
+    name: Fetch Skeleton + Template
+    action: fetch:template
+    input:
+      url: ./*
+      copyWithoutRender:
+          - .github/workflows/*
+      values:
+         component_id: ${{ parameters.component_id }}
+         description: ${{ parameters.description }}
+         destination: ${{ parameters.repoUrl | parseRepoUrl }}
+         owner: ${{ parameters.owner }}
+
