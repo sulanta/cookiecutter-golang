@@ -9,7 +9,6 @@ metadata:
     - go
 spec:
   owner: sulanta.leisangthem@sophos.com
-  type: service
   parameters:
     required:
       - component_id
